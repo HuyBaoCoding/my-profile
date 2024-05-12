@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="./assets/imgs/icons/favicon.png"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/showInfo.css" />
+        <script
+            src="./assets/js/showInfo.js"
+            type="text/javascript"
+            defer
+        ></script>
+        <!-- <script
+			src="./assets/js/mouseEffect.js"
+			type="text/javascript"
+			defer
+		></script> -->
+        <title>My Info</title>
+    </head>
+    <body>
+        <div id="overlay">
+            <span class="overlay-text">L</span
+            ><span class="overlay-text">O</span
+            ><span class="overlay-text">A</span
+            ><span class="overlay-text">D</span
+            ><span class="overlay-text">I</span
+            ><span class="overlay-text">N</span
+            ><span class="overlay-text">G</span>
+        </div>
+        <div id="my-info" class="grid wide">
+            <!-- Header -->
+            <div class="info__header contain">
+                <div class="header__left">
+                    <div class="avatar"></div>
+                    <div class="right">
+                        <div class="name">Nguyễn Hữu Huy Bảo</div>
+                        <div class="description">
+                            <i class="fa-solid fa-graduation-cap"></i> Học Sinh
+                        </div>
+                        <div class="contact">
+                            <a
+                                href="https://www.facebook.com/huybao.info"
+                                ><div
+                                    class="contact-icon"
+                                    style="--bgColor: #3b5998"
+                                >
+                                    <i class="fab fa-facebook-f"></i>
+                                    <div class="icon-popup">Facebook</div>
+                                </div></a
+                            >
+                            <a
+                                href="https://www.tiktok.com/@tiktok"
+                                ><div
+                                    class="contact-icon"
+                                    style="--bgColor: black"
+                                >
+                                    <i class="fab fa-tiktok"></i>
+                                    <div class="icon-popup">Tiktok</div>
+                                </div></a
+                            >
+                            <a href="https://zalo.me/0338307827"
+                                ><div
+                                    class="contact-icon"
+                                    style="--bgColor: #0a68fe"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        x="0px"
+                                        y="0px"
+                                        viewBox="0 0 48 48"
+                                        style="fill: #000000"
+                                    >
+                                        <path
+                                            fill="#2962ff"
+                                            d="M15,36V6.827l-1.211-0.811C8.64,8.083,5,13.112,5,19v10c0,7.732,6.268,14,14,14h10	c4.722,0,8.883-2.348,11.417-5.931V36H15z"
+                                        ></path>
+                                        <path
+                                            fill="#eee"
+                                            d="M29,5H19c-1.845,0-3.601,0.366-5.214,1.014C10.453,9.25,8,14.528,8,19	c0,6.771,0.936,10.735,3.712,14.607c0.216,0.301,0.357,0.653,0.376,1.022c0.043,0.835-0.129,2.365-1.634,3.742	c-0.162,0.148-0.059,0.419,0.16,0.428c0.942,0.041,2.843-0.014,4.797-0.877c0.557-0.246,1.191-0.203,1.729,0.083	C20.453,39.764,24.333,40,28,40c4.676,0,9.339-1.04,12.417-2.916C42.038,34.799,43,32.014,43,29V19C43,11.268,36.732,5,29,5z"
+                                        ></path>
+                                        <path
+                                            fill="#2962ff"
+                                            d="M36.75,27C34.683,27,33,25.317,33,23.25s1.683-3.75,3.75-3.75s3.75,1.683,3.75,3.75	S38.817,27,36.75,27z M36.75,21c-1.24,0-2.25,1.01-2.25,2.25s1.01,2.25,2.25,2.25S39,24.49,39,23.25S37.99,21,36.75,21z"
+                                        ></path>
+                                        <path
+                                            fill="#2962ff"
+                                            d="M31.5,27h-1c-0.276,0-0.5-0.224-0.5-0.5V18h1.5V27z"
+                                        ></path>
+                                        <path
+                                            fill="#2962ff"
+                                            d="M27,19.75v0.519c-0.629-0.476-1.403-0.769-2.25-0.769c-2.067,0-3.75,1.683-3.75,3.75	S22.683,27,24.75,27c0.847,0,1.621-0.293,2.25-0.769V26.5c0,0.276,0.224,0.5,0.5,0.5h1v-7.25H27z M24.75,25.5	c-1.24,0-2.25-1.01-2.25-2.25S23.51,21,24.75,21S27,22.01,27,23.25S25.99,25.5,24.75,25.5z"
+                                        ></path>
+                                        <path
+                                            fill="#2962ff"
+                                            d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5	c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z"
+                                        ></path>
+                                    </svg>
+                                    <div class="icon-popup">Zalo</div>
+                                </div></a
+                            >
+                            <a href="https://www.youtube.com/"
+                                ><div
+                                    class="contact-icon"
+                                    style="--bgColor: #ea4335"
+                                >
+                                    <i class="fab fa-youtube"></i>
+                                    <div class="icon-popup">Youtube</div>
+                                </div></a
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__right">
+                    <div class="row">
+                        <div class="info-right col l-8 m-8 s-12">
+                            <div class="name">Email</div>
+                            <div class="description">
+                                huybaodev@hotmail.com
+                            </div>
+                        </div>
+                        <div class="info-right col l-4 m-4 s-12">
+                            <div class="name">Ngày sinh</div>
+                            <div class="description">09/01/2006</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="info-right col l-8 m-8 s-12">
+                            <div class="name">Số điện thoại</div>
+                            <div class="description">0338307827</div>
+                        </div>
+                        <div class="info-right col l-4 m-4 s-12">
+                            <div class="name">Nơi sinh</div>
+                            <div class="description">Nghệ An</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Body -->
+            <div class="info__body row">
+                <div class="col l-2 m-12 s-12">
+                    <ul id="nav" class="contain">
+                        <li class="nav-item active">
+                            <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/dxjqoygy.json"
+                                trigger="morph"
+                                style="width: 50px; height: 50px"
+                            >
+                            </lord-icon>
+                            <div class="title">Bản thân</div>
+                        </li>
+                        <li class="nav-item">
+                            <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/wxnxiano.json"
+                                trigger="morph"
+                                style="width: 50px; height: 50px"
+                            >
+                            </lord-icon>
+                            <div class="title">Học vấn</div>
+                        </li>
+                        <li class="nav-item">
+                            <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/hpxruznz.json"
+                                trigger="morph"
+                                style="width: 50px; height: 50px"
+                            >
+                            </lord-icon>
+                            <div class="title">Mục tiêu</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col l-10 m-12 s-12">
+                    <div id="content" class="contain">
+                        <!-- Bản thân -->
+                        <div class="content-item active">
+                            <div class="sub-item">
+                                <h1 class="big-title">Giới thiệu</h1>
+                                <p>
+                                    Mình tên là Bảo, Một người đam mê sâu sắc với lập trình back-end
+                                </p>
+                                <p>
+                                    Mình có nền tảng lập trình từ rất lâu rồi,
+                                    thế nên mình đã tự quyết định theo đuổi
+                                    ngành này. Sau 1 khoảng thời gian học tập
+                                    rèn luyện, mình đã hoàn thành khóa học
+                                    Full-Stack Web Developer căn bản và sẽ tiếp
+                                    tục học các khóa khác để vươn tới mục tiêu
+                                    có thể thực tập và đi làm trong tương lai!
+                                </p>
+                            </div>
+                            <div class="sub-item">
+                                <h2 class="small-title">Sản phẩm của mình</h2>
+                                <div class="row">
+                                    
+                                    <div class="col l-6 m-6 s-12">
+                                        <div class="i-did">
+                                            <a
+                                                target="_blank"
+                                                href="https://cinema-navy.vercel.app/"
+                                                ><div class="img">
+                                                    <img
+                                                        src="./assets/imgs/idid/cinema.png"
+                                                        alt="Cinema"
+                                                    /></div
+                                            ></a>
+                                            <h3 class="title">Cinema</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-6 s-12">
+                                        <div class="i-did">
+                                            <a
+                                                target="_blank"
+                                                href="https://music-player-theta-jade.vercel.app/"
+                                                ><div class="img">
+                                                    <img
+                                                        src="./assets/imgs/idid/musicPlayer.png"
+                                                        alt="Music Player"
+                                                    /></div
+                                            ></a>
+                                            <h3 class="title">Music Player</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-6 s-12">
+                                        <div class="i-did">
+                                            <a
+                                                target="_blank"
+                                                href="https://snoww-mu.vercel.app/"
+                                                ><div class="img">
+                                                    <img
+                                                        src="./assets/imgs/idid/bookCard.png"
+                                                        alt="Form Validation"
+                                                    /></div
+                                            ></a>
+                                            <h3 class="title">Winter Snow</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-6 s-12">
+                                        <div class="i-did">
+                                            <a
+                                                target="_blank"
+                                                href="https://wibe-ochre.vercel.app/"
+                                                ><div class="img">
+                                                    <img
+                                                        src="./assets/imgs/idid/theBand.png"
+                                                        alt="Wibe Studio"
+                                                    /></div
+                                            ></a>
+                                            <h3 class="title">Wibe Studio</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-6 s-12">
+                                        <div class="i-did">
+                                            <a
+                                                target="_blank"
+                                                href="https://lqa-page.vercel.app/"
+                                                ><div class="img">
+                                                    <img
+                                                        src="./assets/imgs/idid/cayCanhMini.png"
+                                                        alt="Enterprise Clone"
+                                                    /></div
+                                            ></a>
+                                            <h3 class="title">
+                                                Enterprise Clone
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-6 s-12">
+                                        <div class="i-did">
+                                            <a
+                                                target="_blank"
+                                                href="https://food-six-mu.vercel.app/"
+                                                ><div class="img">
+                                                    <img
+                                                        src="./assets/imgs/idid/clock.png"
+                                                        alt="Food"
+                                                    /></div
+                                            ></a>
+                                            <h3 class="title">Food</h3>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col l-6 m-6 s-12">
+                                        <div class="i-did">
+                                            <a
+                                                target="_blank"
+                                                href="https://organic-chi.vercel.app/"
+                                                ><div class="img">
+                                                    <img
+                                                        src="./assets/imgs/idid/happyNewYear2022.png"
+                                                        alt="Organic"
+                                                    /></div
+                                            ></a>
+                                            <h3 class="title">Organic</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-6 s-12">
+                                        <div class="i-did">
+                                            <a
+                                                target="_blank"
+                                                href="https://coffe-inky.vercel.app/"
+                                                ><div class="img">
+                                                    <img
+                                                        src="./assets/imgs/idid/textIcon.png"
+                                                        alt="Coffee"
+                                                    /></div
+                                            ></a>
+                                            <h3 class="title">Coffee</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sub-item">
+                                <h2 class="small-title">
+                                    Những câu nói cho mình cảm hứng
+                                </h2>
+
+                                <div class="slider">
+                                    <div class="slide-main">
+                                        <div class="slide-bar">
+                                            <div class="slide-item">
+                                                <div
+                                                    class="avatar"
+                                                    style="
+                                                        background-image: url('./assets/imgs/slider/bill-gates.jpg');
+                                                    "
+                                                ></div>
+                                                <div class="content">
+                                                    <h3>Bill Gates</h3>
+                                                    <p>
+                                                        Tôi chọn người lười
+                                                        biếng để làm những việc
+                                                        khó khăn. Bởi một người
+                                                        lười biếng sẽ tìm ra
+                                                        cách dễ dàng để làm việc
+                                                        đó.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="slide-item">
+                                                <div
+                                                    class="avatar"
+                                                    style="
+                                                        background-image: url('./assets/imgs/slider/anhson.jpg');
+                                                    "
+                                                ></div>
+                                                <div class="content">
+                                                    <h3>Anh Sơn</h3>
+                                                    <p>
+                                                        Hãy bình tĩnh để xây
+                                                        dựng một nền móng thật
+                                                        chắc! Người nào không có
+                                                        móng chắc, lên được
+                                                        khoảng 20 tầng thôi
+                                                        không xây được tiếp
+                                                        đâu... cố xây tiếp...
+                                                        SẬP!
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="slide-item">
+                                                <div
+                                                    class="avatar"
+                                                    style="
+                                                        background-image: url('./assets/imgs/slider/mark-zuckerberg.jpg');
+                                                    "
+                                                ></div>
+                                                <div class="content">
+                                                    <h3>Mark Zuckerberg</h3>
+                                                    <p>
+                                                        Di chuyển nhanh và phá
+                                                        vỡ các quy tắc. Nếu vẫn
+                                                        chưa phá vỡ cái gì,
+                                                        chứng tỏ bạn di chuyển
+                                                        chưa đủ nhanh.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="slide-item">
+                                                <div
+                                                    class="avatar"
+                                                    style="
+                                                        background-image: url('./assets/imgs/slider/warren.jpg');
+                                                    "
+                                                ></div>
+                                                <div class="content">
+                                                    <h3>
+                                                        Warren Edward Buffett
+                                                    </h3>
+                                                    <p>
+                                                        Khi một người được ngồi
+                                                        trong bóng mát ngày hôm
+                                                        nay thì đó là vì ai đó
+                                                        đã trồng 1 cái cây từ
+                                                        trước đó rất lâu.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="slide-item">
+                                                <div
+                                                    class="avatar"
+                                                    style="
+                                                        background-image: url('./assets/imgs/slider/bill-gates.jpg');
+                                                    "
+                                                ></div>
+                                                <div class="content">
+                                                    <h3>Bill Gates</h3>
+                                                    <p>
+                                                        Tôi chọn người lười
+                                                        biếng để làm những việc
+                                                        khó khăn. Bởi một người
+                                                        lười biếng sẽ tìm ra
+                                                        cách dễ dàng để làm việc
+                                                        đó.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="slide-item">
+                                                <div
+                                                    class="avatar"
+                                                    style="
+                                                        background-image: url('./assets/imgs/slider/anhson.jpg');
+                                                    "
+                                                ></div>
+                                                <div class="content">
+                                                    <h3>Anh Sơn</h3>
+                                                    <p>
+                                                        Hãy bình tĩnh để xây
+                                                        dựng một nền móng thật
+                                                        chắc! Người nào không có
+                                                        móng chắc, lên được
+                                                        khoảng 20 tầng thôi
+                                                        không xây được tiếp
+                                                        đâu... cố xây tiếp...
+                                                        SẬP!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-dot">
+                                        <!-- <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span> -->
+                                    </div>
+                                    <div id="prev-slide">
+                                        <i class="fas fa-angle-left"></i>
+                                    </div>
+                                    <div id="next-slide">
+                                        <i class="fas fa-angle-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Học vấn -->
+
+                        <div class="content-item">
+                            <div class="sub-item">
+                                <h1 class="big-title">Học vấn</h1>
+                                <h2 class="icon-title">
+                                    <img
+                                        src="./assets/imgs/icons/exp.png"
+                                        alt=""
+                                        class=""
+                                    />
+                                    Kiến thức
+                                </h2>
+
+                                <div class="timeline">
+                                    <h4 class="title">HTML</h4>
+                                    <div class="time">
+                                        HyperText Markup Language
+                                    </div>
+                                    <p>
+                                        HTML được dịch là "Ngôn ngữ đánh dấu
+                                        siêu văn bản", nó được dùng để tạo ra
+                                        các tài liệu hiện thị được trên trình
+                                        duyệt. HTML gọi là ngôn ngữ nhưng nó
+                                        không giống như các ngôn ngữ kịch bản
+                                        hay ngôn ngữ lập trình (sử dụng các kịch
+                                        bản để thi hành các tác vụ), ngôn ngữ
+                                        đánh dấu HTML lại sử dụng các thẻ để xác
+                                        định nội dung của trang.
+                                    </p>
+                                </div>
+                                <div class="timeline">
+                                    <h4 class="title">CSS</h4>
+                                    <div class="time">
+                                        Cascading Style Sheets
+                                    </div>
+                                    <p>
+                                        CSS là một ngôn ngữ được sử dụng để tìm
+                                        và định dạng lại các phần tử được tạo ra
+                                        bởi ngôn ngữ đánh dấu (HTML). Nói ngắn
+                                        gọn hơn là ngôn ngữ tạo phong cách cho
+                                        trang web.
+                                    </p>
+                                </div>
+                                <div class="timeline">
+                                    <h4 class="title">JS</h4>
+                                    <div class="time">JavaScript</div>
+                                    <p>
+                                        Javascript là một ngôn ngữ lập trình
+                                        kịch bản được sử dụng rộng rãi trong các
+                                        ứng dụng Website và được hỗ trợ hầu như
+                                        trên tất cả các trình duyệt trên cả máy
+                                        tính lẫn điện thoại. Nhiệm vụ của
+                                        Javascript là xử lý những đối tượng HTML
+                                        trên trình duyệt. Nó có thể can thiệp
+                                        với các hành động như thêm / xóa / sửa
+                                        các thuộc tính CSS và các thẻ HTML một
+                                        cách dễ dàng.
+                                    </p>
+                                </div>
+                                <div class="timeline">
+                                    <h4 class="title">ReactJS</h4>
+                                    <div class="time">ReactJS</div>
+                                    <p>
+                                        ReactJS được hiểu nôm na là một thư viện
+                                        mã nguồn mở chứa nhiều JavaScript và
+                                        người tạo ra ReactJS chính là ông trùm
+                                        với cái tên quen thuộc Facebook, được ra
+                                        đời vào năm 2013. Mục đích của việc tạo
+                                        ReactJS là tạo ra các ứng dụng web
+                                        nhanh, hiệu quả và hấp dẫn với nỗ lực
+                                        viết mã tối thiểu. Mục tiêu chính của
+                                        ReactJS là bất kỳ trang web nào sử dụng
+                                        ReactJS phải mượt mà, nhanh chóng, khả
+                                        năng mở rộng cao và dễ thực hiện.
+                                    </p>
+                                </div>
+                                <div class="timeline">
+                                    <h4 class="title">NextJS</h4>
+                                    <div class="time">NextJS</div>
+                                    <p>
+                                        NextJS là framework mã nguồn mở được xây
+                                        dựng trên nền tảng của React, cho phép
+                                        chúng ta xây dựng các trang web tĩnh có
+                                        tốc độ siêu nhanh và thân thiện với
+                                        người dùng, cũng như xây dựng các ứng
+                                        dụng web React. NextJS được ra đời vào
+                                        năm 2016, thuộc sở hữu của Vercel.
+                                        NextJS bắt đầu trở nên phổ biến vào năm
+                                        2018 và tiếp tục tăng trưởng mạnh mẽ
+                                        trong cộng đồng phát triển web vào những
+                                        năm sau đó. Sự kết hợp của các tính năng
+                                        như Server-side Rendering (SSR) với
+                                        Static Site Generation (SSG) đã giúp
+                                        NextJS trở thành sự lựa chọn hấp dẫn cho
+                                        nhiều dự án phát triển ứng dụng web.
+                                    </p>
+                                </div>
+                                <div class="timeline">
+                                    <h4 class="title">NodeJS</h4>
+                                    <div class="time">NodeJS</div>
+                                    <p>
+                                        NodeJS là một nền tảng được xây dựng
+                                        trên “V8 Javascript engine” được viết
+                                        bằng c++ và Javascript. Nền tảng này
+                                        được phát triển bởi Ryan Lienhart Dahl
+                                        vào năm 2009. Node.js ra đời khi các
+                                        developer đời đầu của JavaScript mở rộng
+                                        nó từ một thứ bạn chỉ chạy được trên
+                                        trình duyệt thành một thứ bạn có thể
+                                        chạy trên máy của mình dưới dạng ứng
+                                        dụng độc lập.
+                                    </p>
+                                </div>
+                                <div class="timeline">
+                                    <h4 class="title">NestJS</h4>
+                                    <div class="time">NestJS</div>
+                                    <p>
+                                        NestJS là một framework mã nguồn mở để
+                                        phát triển ứng dụng server-side (backend
+                                        applications) bằng ngôn ngữ TypeScript
+                                        hoặc JavaScript. Nó được xây dựng trên
+                                        cơ sở của Node.js và sử dụng các khái
+                                        niệm từ TypeScript để tạo ra một môi
+                                        trường phát triển hiện đại và mạnh mẽ
+                                        cho việc xây dựng các ứng dụng web và
+                                        API. Mục tiêu chính của NestJS là cung
+                                        cấp một cấu trúc ứng dụng rõ ràng và dễ
+                                        quản lý, giúp tăng tính bảo trì và sự tổ
+                                        chức trong mã nguồn. Để đạt được điều
+                                        này, NestJS triển khai mô hình kiến trúc
+                                        lõi (core architecture) dựa trên các
+                                        nguyên tắc của Angular, đặc biệt là sử
+                                        dụng Dependency Injection (DI) và
+                                        Modules (Các module).
+                                    </p>
+                                </div>
+                                <div class="timeline">
+                                    <h4 class="title">C#</h4>
+                                    <div class="time">C#</div>
+                                    <p>
+                                        C# (hay C sharp) là một ngôn ngữ lập
+                                        trình đơn giản, được phát triển bởi đội
+                                        ngũ kỹ sư của Microsoft vào năm 2000. C#
+                                        là ngôn ngữ lập trình hiện đại, hướng
+                                        đối tượng và được xây dựng trên nền tảng
+                                        của hai ngôn ngữ mạnh nhất là C++ và
+                                        Java.
+                                    </p>
+                                </div>
+                                <div class="timeline">
+                                    <h4 class="title">Java</h4>
+                                    <div class="time">Java</div>
+                                    <p>
+                                        Java là một ngôn ngữ lập trình được sử
+                                        dụng rộng rãi để viết mã cho các ứng
+                                        dụng web. Ngôn ngữ này là lựa chọn phổ
+                                        biến của các nhà phát triển trong hơn 2
+                                        thập niên. Hiện nay có hàng triệu ứng
+                                        dụng Java đang được sử dụng. Java là một
+                                        ngôn ngữ đa nền tảng, hướng đến đối
+                                        tượng, lấy mạng làm trung tâm và có thể
+                                        được sử dụng như một nền tảng. Đây là
+                                        một ngôn ngữ lập trình nhanh, bảo mật,
+                                        đáng tin cậy dùng để viết mã cho mọi thứ
+                                        từ ứng dụng di động, phần mềm doanh
+                                        nghiệp cho đến các ứng dụng dữ liệu lớn
+                                        và công nghệ phía máy chủ.
+                                    </p>
+                                </div>
+                                <div class="timeline">
+                                    <h4 class="title">Spring Boot</h4>
+                                    <div class="time">Spring Boot</div>
+                                    <p>
+                                        Spring Boot là một trong số các module
+                                        của Spring framework chuyên cung cấp các
+                                        tính năng RAD (Rapid Application
+                                        Development) cho phép tạo ra và phát
+                                        triển các ứng dụng độc lập dựa trên
+                                        Spring một cách nhanh chóng. Spring Boot
+                                        ra đời với mục đích loại bỏ những cấu
+                                        hình phức tạp của Spring, nó không yêu
+                                        cầu cấu hình XML và nâng cao năng suất
+                                        cho các nhà phát triển. Với sự góp mặt
+                                        của Spring Boot, hệ sinh thái Spring đã
+                                        trở nên mạnh mẽ, phổ biến và hiệu quả
+                                        hơn bao giờ hết.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="sub-item">
+                                <h2 class="icon-title">Kỹ năng của tôi</h2>
+                                <div class="skill">
+                                    <div
+                                        class="skill-progress"
+                                        style="
+                                            --skill-name: 'HTML';
+                                            --skill-percent: '90%';
+                                            --percent: 90%;
+                                        "
+                                    ></div>
+                                    <div
+                                        class="skill-progress"
+                                        style="
+                                            --skill-name: 'CSS';
+                                            --skill-percent: '80%';
+                                            --percent: 80%;
+                                        "
+                                    ></div>
+                                    <div
+                                        class="skill-progress"
+                                        style="
+                                            --skill-name: 'JS';
+                                            --skill-percent: '80%';
+                                            --percent: 80%;
+                                        "
+                                    ></div>
+                                    <div
+                                        class="skill-progress"
+                                        style="
+                                            --skill-name: 'ReactJS';
+                                            --skill-percent: '85%';
+                                            --percent: 85%;
+                                        "
+                                    ></div>
+                                    <div
+                                        class="skill-progress"
+                                        style="
+                                            --skill-name: 'NodeJS';
+                                            --skill-percent: '80%';
+                                            --percent: 80%;
+                                        "
+                                    ></div>
+                                    <div
+                                        class="skill-progress"
+                                        style="
+                                            --skill-name: 'C#';
+                                            --skill-percent: '70%';
+                                            --percent: 70%;
+                                        "
+                                    ></div>
+                                    <div
+                                        class="skill-progress"
+                                        style="
+                                            --skill-name: 'Java';
+                                            --skill-percent: '60%';
+                                            --percent: 60%;
+                                        "
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Muc tieu -->
+                        <div class="content-item">
+                            <div class="sub-item">
+                                <h1 class="big-title">Mục tiêu</h1>
+                                <h2 class="small-title">Ngắn hạn</h2>
+
+                                <div class="timeline">
+                                    <h4 class="title">Học Nodejs, PHP</h4>
+                                    <div class="time">05/2024</div>
+                                    <p>
+                                        Nhận thấy việc chỉ học các kiến thức về
+                                        C# là chưa đủ vì vậy mình sẽ tiếp tục
+                                        tập trung học thêm Nodejs cùng với ngôn
+                                        ngữ PHP và mục tiêu hoàn thành nó trong
+                                        tháng 5.
+                                    </p>
+                                </div>
+
+                                <div class="timeline">
+                                    <h4 class="title">Học React Native</h4>
+                                    <div class="time">08/2024</div>
+                                    <p>
+                                        React Native là một framework do công ty
+                                        công nghệ nổi tiếng Facebook phát triển
+                                        nhằm mục đích giải quyết bài toán hiệu
+                                        năng của Hybrid và bài toán chi phí khi
+                                        mà phải viết nhiều loại ngôn ngữ native
+                                        cho từng nền tảng di động.
+                                    </p>
+                                </div>
+                                <div class="timeline">
+                                    <h4 class="title">Học Devops</h4>
+                                    <div class="time">05/2025</div>
+                                    <p>
+                                        DevOps có vai trò quan trọng trong việc
+                                        kết nối giữa các bộ phận phát triển và
+                                        vận hành trong một tổ chức phát triển
+                                        phần mềm, giúp tăng tốc độ triển khai,
+                                        cải thiện chất lượng sản phẩm và giảm
+                                        thiểu rủi ro trong quá trình phát triển
+                                        và triển khai sản phẩm. Các nguyên tắc
+                                        của DevOps bao gồm: tích hợp liên tục,
+                                        triển khai liên tục, kiểm thử liên tục,
+                                        quản lý cấu hình, giám sát và phản hồi
+                                        liên tục.
+                                    </p>
+                                </div>
+                                <div class="timeline">
+                                    <h4 class="title">Học Data Analytics</h4>
+                                    <div class="time">08/2026</div>
+                                    <p>
+                                        Cũng vì nhu cầu của thị trường về phân
+                                        tích dữ liệu cũng như khai phá tiềm năng
+                                        của AI nên mình cũng sẽ bùng cháy hết
+                                        mình.
+                                    </p>
+                                </div>
+
+                                <div class="timeline">
+                                    <h4 class="title">Học Tiếng Anh</h4>
+                                    <div class="time">
+                                        Song song với học code
+                                    </div>
+                                    <p>
+                                        Tiếng anh là ngôn ngữ của toàn thế giới.
+                                        Trong lập trình, tiếng anh cũng đóng vai
+                                        trò quan trọng không kém những kiến thức
+                                        về code bởi đa số các tài liệu hay thậm
+                                        chí việc viết code hằng ngày của chúng
+                                        ta đều phải giao tiếp với Tiếng Anh.
+                                        Nhận thấy khả năng Tiếng Anh hiện tại
+                                        chưa được tốt và phải nghiêm túc khắc
+                                        phục nên mình sẽ dành thời gian hợp lý
+                                        song song với việc học code để bổ sung
+                                        thêm kiến thức về Tiếng Anh. Mục tiêu là
+                                        có thể đọc hiểu các tài liệu về Tiếng
+                                        Anh chuyên ngành.
+                                    </p>
+                                </div>
+
+                                <div class="timeline">
+                                    <h4 class="title">Thực hành</h4>
+                                    <div class="time">Trong quá trình học</div>
+                                    <p>
+                                        Trong quá trình học, mình sẽ áp dụng
+                                        những kiến thức đã học và làm các
+                                        project nhỏ để rèn luyện thêm kỹ năng,
+                                        từ đó rút ra những kinh nghiệm và khắc
+                                        phục những thiếu sót của bản thân.
+                                    </p>
+                                </div>
+                            </div>
+
+                            
+                       
+                                        </div>
+                                    </div></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            </div>
+            <div class="popup-control">
+                <div class="control">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="control active" id="playBtn">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="control">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+            </div>
+        </popup>
+
+        <script>
+            const aElements = document.links;
+            Array.from(aElements).forEach((a) =>
+                a.setAttribute("target", "blank")
+            );
+        </script>
+    </body>
+</html>
+
+
